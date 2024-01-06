@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 interface IContentSectionProps {
@@ -20,7 +21,7 @@ const ContentSection = (props: IContentSectionProps): JSX.Element => {
           <p className="mb-4 font-light">{description_first}</p>
           <p className="mb-4 font-medium">{description_second}</p>
           {buttonText && (
-            <a
+            <Link
               href="#"
               className="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700"
             >
@@ -37,7 +38,7 @@ const ContentSection = (props: IContentSectionProps): JSX.Element => {
                   clip-rule="evenodd"
                 ></path>
               </svg>
-            </a>
+            </Link>
           )}
         </div>
       </div>
